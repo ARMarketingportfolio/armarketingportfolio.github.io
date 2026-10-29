@@ -460,6 +460,41 @@ h1 em {
   line-height: 1.55;
 }
 
+.featured-case--dark {
+  width: 100%;
+  max-width: none;
+  padding-inline: max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.featured-case--dark .featured-case-label,
+.featured-case--dark .featured-case-hero-metric,
+.featured-case--dark .featured-case-metrics,
+.featured-case--dark .featured-case-metrics article,
+.featured-case--dark .featured-case-system > div {
+  border-color: #4a4e46;
+}
+
+.featured-case--dark .featured-case-label,
+.featured-case--dark .featured-case-head > div:first-child > p,
+.featured-case--dark .featured-case-hero-metric small,
+.featured-case--dark .featured-case-metrics small,
+.featured-case--dark .featured-case-system article > span,
+.featured-case--dark .featured-case-system article p {
+  color: #b8bcb2;
+}
+
+.featured-case--dark .featured-case-hero-metric strong,
+.featured-case--dark .featured-case-metrics strong {
+  color: var(--accent);
+}
+
+.featured-case--dark .featured-case-system article,
+.featured-case--dark .featured-case-system article:nth-child(even) {
+  border-color: #4a4e46;
+}
+
 .system-steps {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1077,6 +1112,11 @@ footer {
   }
 
   .systems {
+    width: 100%;
+    padding-inline: 16px;
+  }
+
+  .featured-case--dark {
     width: 100%;
     padding-inline: 16px;
   }
