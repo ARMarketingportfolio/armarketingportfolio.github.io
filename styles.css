@@ -307,6 +307,159 @@ h1 em {
   line-height: 1.65;
 }
 
+.featured-case {
+  padding-top: 6rem;
+}
+
+.featured-case-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.featured-case-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(250px, 0.7fr);
+  gap: clamp(3rem, 8vw, 8rem);
+  padding: 4.5rem 0;
+  align-items: end;
+}
+
+.featured-case-head h2 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 6.3rem);
+  line-height: 0.94;
+  letter-spacing: -0.065em;
+}
+
+.featured-case-head > div:first-child > p {
+  max-width: 720px;
+  margin: 2rem 0 0;
+  color: #4c5048;
+  font-size: clamp(1rem, 1.7vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.featured-case-hero-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ink);
+}
+
+.featured-case-hero-metric strong {
+  color: var(--accent-dark);
+  font-size: clamp(4rem, 7vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+}
+
+.featured-case-hero-metric span,
+.featured-case-metrics span {
+  margin-top: 1.2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.featured-case-hero-metric small,
+.featured-case-metrics small {
+  margin-top: 0.7rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.featured-case-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+
+.featured-case-metrics article {
+  min-height: 255px;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.featured-case-metrics strong {
+  color: var(--accent-dark);
+  font-size: clamp(2.7rem, 4.5vw, 4.6rem);
+  letter-spacing: -0.06em;
+}
+
+.featured-case-metrics span {
+  margin-top: auto;
+}
+
+.featured-case-system {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3rem;
+  padding-top: 5rem;
+}
+
+.featured-case-system > p {
+  margin: 0.4rem 0 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.featured-case-system > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+}
+
+.featured-case-system article {
+  min-height: 230px;
+  padding: 1.7rem 1.7rem 1.7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.featured-case-system article:nth-child(even) {
+  padding-left: 1.7rem;
+  border-left: 1px solid var(--line);
+}
+
+.featured-case-system article > span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.featured-case-system h3 {
+  margin: 3.2rem 0 0.8rem;
+  font-size: clamp(1.35rem, 2.3vw, 2rem);
+  letter-spacing: -0.04em;
+}
+
+.featured-case-system article p {
+  max-width: 450px;
+  margin: 0;
+  color: #4c5048;
+  line-height: 1.55;
+}
+
 .system-steps {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -765,6 +918,10 @@ footer {
   .working-principles {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .featured-case-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 800px) {
@@ -790,6 +947,47 @@ footer {
   .hero-bottom,
   .section-heading {
     grid-template-columns: 1fr;
+  }
+
+  .featured-case {
+    padding-top: 4rem;
+  }
+
+  .featured-case-label,
+  .featured-case-head,
+  .featured-case-system {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-case-label {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .featured-case-head {
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+
+  .featured-case-metrics,
+  .featured-case-system > div {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-case-metrics article {
+    min-height: 210px;
+  }
+
+  .featured-case-system {
+    gap: 1.5rem;
+    padding-top: 4rem;
+  }
+
+  .featured-case-system article,
+  .featured-case-system article:nth-child(even) {
+    min-height: 205px;
+    padding: 1.6rem 0;
+    border-left: 0;
   }
 
   .proof {
