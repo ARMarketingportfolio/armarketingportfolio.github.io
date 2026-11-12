@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Andrea Riccardi, creative strategist: ad concepts, hooks, copy and statics built from what customers actually say." />
+    <meta name="theme-color" content="#10130f" />
+    <title>Andrea Riccardi | Creative Strategy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;family=Instrument+Sans:ital,wght@0,400..700;1,400..700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css?v=20261112-1" />
+    <style>
+      .ad-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:40px}
+      .ad-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+      .ad-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#eee}
+      .ad-card--tall img{object-fit:contain;background:#0d1626}
+      .ad-card div{padding:18px 20px 22px}
+      .ad-card .tag{font-family:var(--font-mono);font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+      .ad-card h3{font-size:22px;line-height:1.25;margin:8px 0 8px;font-weight:600}
+      .ad-card p{font-size:18px;line-height:1.5;color:#33362f;margin:0}
+      .ad-note{margin-top:24px;font-size:18px;color:var(--muted);max-width:760px}
+      .tools-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+      .tools-row span{border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:16px;background:#fff}
+      .switch-link{display:inline-block;margin-top:18px;font-size:18px;color:inherit;text-decoration:underline;text-underline-offset:4px}
+      @media (max-width:1000px){.ad-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media (max-width:620px){.ad-grid{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Andrea Riccardi, home">AR</a>
+      <nav aria-label="Primary navigation">
+        <a href="#ads">Ads</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+      </nav>
+      <a class="header-cta" href="mailto:ariccardi.marketing@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="eyebrow"><span></span> Madrid · Creative strategist · Remote</div>
+        <h1 id="hero-title">I read what customers say, then <em>turn it into ads worth testing.</em></h1>
+        <div class="hero-bottom">
+          <p>Reviews, ad comments and search terms tell you why people buy and what stops them. I turn that into angles, hooks, copy and statics. I also run the media, so I find out fast which ideas earn more budget.</p>
+          <a class="button" href="#ads">See the ads <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="logo-cloud" aria-labelledby="logo-cloud-title">
+        <p id="logo-cloud-title">Brands I’ve worked with</p>
+        <div class="logo-row">
+          <div class="logo-item"><img src="../assets/brands/ac-milan.png" alt="AC Milan" /></div>
+          <div class="logo-item"><img src="../assets/brands/natulim.png" alt="Natulim" /></div>
+          <div class="logo-item logo-item--mark"><img src="../assets/brands/cgi-green.png" alt="CGI Green" /></div>
+          <div class="logo-item"><img src="../assets/brands/the-week.svg" alt="The Week" /></div>
+          <div class="logo-item logo-item--wide"><img src="../assets/brands/charles-tyrwhitt.svg" alt="Charles Tyrwhitt" /></div>
+          <div class="logo-item logo-item--wide"><img src="../assets/brands/holafly.svg" alt="Holafly" /></div>
+        </div>
+      </section>
+
+      <section class="proof" aria-label="Selected results">
+        <article><strong>500+</strong><span>Creative briefs written</span></article>
+        <article><strong>€11.3</strong><span>CPA on my best Natulim video, against a €32–34 average</span></article>
+        <article><strong>3.2×</strong><span>ROAS from a plain AC Milan product static</span></article>
+        <article><strong>9</strong><span>Buying objections turned into angles for CGI Green</span></article>
+      </section>
+
+      <section class="section" id="ads" aria-labelledby="ads-title">
+        <div class="section-heading">
+          <p>01 / Ads</p>
+          <div>
+            <h2 id="ads-title">Some of the ads I’ve made.</h2>
+            <p class="section-intro">CGI Green, a US sea moss brand. Each ad starts from one angle: a reason to buy or a doubt to answer. I wrote the copy and made the statics with AI image tools and the real product photos.</p>
+          </div>
+        </div>
+
+        <div class="ad-grid">
+          <article class="ad-card">
+            <img src="assets/ads/real-mango.jpg" alt="Real Mango. Real Sea Moss. static ad" />
+            <div><span class="tag">Angle · Taste</span><h3>“Real mango. Real sea moss.”</h3><p>For people worried sea moss tastes like the sea. It leads with the fruit.</p></div>
+          </article>
+          <article class="ad-card">
+            <img src="assets/ads/price-per-day.jpg" alt="$1.13 a day static ad for gummies" />
+            <div><span class="tag">Angle · Price</span><h3>“$1.13 a day. Less than your morning coffee.”</h3><p>Turns a $33.95 bottle into a daily cost people already pay without thinking.</p></div>
+          </article>
+          <article class="ad-card">
+            <img src="assets/ads/notes-app.jpg" alt="Notes app style ad: my 7am, honestly" />
+            <div><span class="tag">Format · Native notes app</span><h3>“my 7am, honestly”</h3><p>Looks like a screenshot, not an ad. Sells the routine: water, 2 tablespoons, done.</p></div>
+          </article>
+          <article class="ad-card">
+            <img src="assets/ads/field-notes.jpg" alt="Field notes style ad: We don't tell you it's organic. We show you." />
+            <div><span class="tag">Angle · Proof of sourcing</span><h3>“We don’t tell you it’s organic. We show you.”</h3><p>For the careful buyer who reads before buying. Uses the brand’s own line.</p></div>
+          </article>
+          <article class="ad-card">
+            <img src="assets/ads/two-tablespoons.jpg" alt="2 tablespoons a day static ad" />
+            <div><span class="tag">Angle · How to use it</span><h3>“2 tablespoons a day.”</h3><p>Answers “how do I take it?” right in the headline.</p></div>
+          </article>
+          <article class="ad-card ad-card--tall">
+            <img src="assets/ads/gamers.jpg" alt="For gamers static ad for sea moss gummies" />
+            <div><span class="tag">Audience · Gamers</span><h3>“For gamers who are done with energy drinks.”</h3><p>Same product, new audience: no caffeine, no taurine, a different reason to try it.</p></div>
+          </article>
+          <article class="ad-card">
+            <img src="assets/ads/three-flavors.jpg" alt="Three flavors, one daily habit static ad" />
+            <div><span class="tag">Angle · Flavour choice</span><h3>“Three flavors. One daily habit.”</h3><p>Gives people a flavour to pick instead of a product to figure out.</p></div>
+          </article>
+          <article class="ad-card">
+            <img src="assets/ads/taste-caribbean.jpg" alt="Taste the Caribbean bundle static ad" />
+            <div><span class="tag">Angle · Bundle value</span><h3>“Taste the Caribbean.”</h3><p>Sells the four-jar bundle, with free shipping up front.</p></div>
+          </article>
+          <article class="ad-card ad-card--tall">
+            <img src="assets/ads/video-ad.jpg" alt="CGI Green Meta video ad with 9.8K reactions" />
+            <div><span class="tag">Video · Meta feed</span><h3>9.8K reactions, 954 shares</h3><p>A harvest video on how the sea moss is air dried, with 358 comments.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section featured-case" id="work" aria-labelledby="natulim-title">
+        <div class="featured-case-label">
+          <span>Case 01 / Natulim</span>
+          <span>Italy · Meta · Creators</span>
+        </div>
+        <div class="featured-case-head">
+          <div>
+            <h2 id="natulim-title">New ads from customer research, not from guesses.</h2>
+            <p>I rebuilt Natulim’s Italian creative from reviews and market research, and briefed about 20 Italian creators, from loose briefs to full scripts. Every video was checked against the product sheet before it went live.</p>
+          </div>
+          <div class="featured-case-hero-metric">
+            <strong>€11.3</strong>
+            <span>CPA on the best research-led video</span>
+            <small>€14.7 on the second, against a €32–34 account average for video</small>
+          </div>
+        </div>
+        <div class="featured-case-metrics" aria-label="Natulim results">
+          <article><strong>5</strong><span>New concepts beat the CPA target</span><small>In their first week live</small></article>
+          <article><strong>~20</strong><span>Italian creators briefed</span><small>Free briefs to full scripts</small></article>
+          <article><strong>€21 → €30</strong><span>Average order</span><small>After moving the ads onto gifts and subscriptions</small></article>
+          <article><strong>+36%</strong><span>Italy revenue year on year</span><small>With fewer orders</small></article>
+        </div>
+      </section>
+
+      <section class="section featured-case featured-case--dark" id="ac-milan" aria-labelledby="ac-milan-title">
+        <div class="featured-case-label">
+          <span>Case 02 / AC Milan</span>
+          <span>Official online store · Kit launches</span>
+        </div>
+        <div class="featured-case-head">
+          <div>
+            <h2 id="ac-milan-title">The player video got the clicks. The product static sold the shirt.</h2>
+            <p>A 15-second player video reached a 13% CTR and no tracked purchases. A plain Third Kit static returned 3.2×. Since then, every kit launch tests player-led and product-led ads side by side.</p>
+          </div>
+          <div class="featured-case-hero-metric">
+            <strong>3.2×</strong>
+            <span>ROAS from a plain product static</span>
+            <small>The high-click player video sold nothing we could track</small>
+          </div>
+        </div>
+        <div class="featured-case-system">
+          <p>What I built</p>
+          <div>
+            <article><span>01</span><h3>Six creative territories</h3><p>Product detail, full outfit, fan ritual, heritage, launch urgency and creator-native content.</p></article>
+            <article><span>02</span><h3>A kit-launch matrix</h3><p>Three kits across two languages and three placements, with player-led and product-led versions.</p></article>
+            <article><span>03</span><h3>Names that carry the test</h3><p>Each ad name holds market, format, angle, player, kit and landing page, so results group cleanly.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-case" id="cgi-green" aria-labelledby="cgi-title">
+        <div class="featured-case-label">
+          <span>Case 03 / CGI Green</span>
+          <span>US DTC · Meta · Google</span>
+        </div>
+        <div class="featured-case-head">
+          <div>
+            <h2 id="cgi-title">Nine reasons people don’t buy, nine angles to answer them.</h2>
+            <p>I went through reviews, ad comments and search terms and found nine objections, from the taste to whether the gel arrives fresh. Each became an angle with its own hooks, and each ad name carries audience, objection and format, so the weekly review shows which doubts the ads actually answer.</p>
+          </div>
+          <div class="featured-case-hero-metric">
+            <strong>6.6×</strong>
+            <span>Revenue per visitor on angle-led pages</span>
+            <small>$5.52 vs $0.83 on the default collection page</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section operating-system" id="process" aria-labelledby="system-title">
+        <div class="section-heading">
+          <p>02 / Process</p>
+          <div>
+            <h2 id="system-title">How an idea becomes an ad.</h2>
+            <p class="section-intro">Before a concept goes live it has to pass a 12-point check, from a hypothesis backed by data to the belief the ad needs to change.</p>
+          </div>
+        </div>
+        <ol class="system-steps">
+          <li><span>01</span><h3>Read what customers say</h3><p>Reviews, ad comments, search terms, support emails and past winners.</p><small>What comes out: reasons to buy and doubts</small></li>
+          <li><span>02</span><h3>Pick one angle</h3><p>One audience, one doubt or desire, one reason the ad should exist.</p><small>What comes out: the hypothesis</small></li>
+          <li><span>03</span><h3>Write the hooks</h3><p>Several openings per angle, in the customer’s own words.</p><small>What comes out: hooks and copy</small></li>
+          <li><span>04</span><h3>Make or brief it</h3><p>I design statics myself, and brief creators, designers and editors for the rest.</p><small>What comes out: the ads</small></li>
+          <li><span>05</span><h3>Name it so it can be read</h3><p>The ad name holds the audience, angle and format, so results sort themselves.</p><small>What comes out: a clean test</small></li>
+          <li><span>06</span><h3>Decide what’s next</h3><p>Scale it, make a new version, or drop it. Then brief the next round.</p><small>What comes out: the next brief</small></li>
+        </ol>
+        <div class="tools-row" aria-label="Tools">
+          <span>Meta Ad Library</span><span>Motion</span><span>Foreplay</span><span>Trendtrack</span><span>Frame.io</span><span>GPT Image</span><span>Veo</span><span>Higgsfield</span><span>ElevenLabs</span><span>HeyGen</span><span>Claude</span><span>Meta Ads Manager</span><span>TikTok Ads Manager</span>
+        </div>
+      </section>
+
+      <section class="section testimonial" id="testimonial" aria-labelledby="testimonial-title">
+        <div class="section-heading"><p>03 / Client perspective</p><h2 id="testimonial-title">Anton Cardinal on working with me.</h2></div>
+        <div class="testimonial-grid">
+          <div class="testimonial-video"><video controls preload="metadata" playsinline><source src="../assets/testimonial/cgi-green-testimonial-clean.mp4" type="video/mp4" />Your browser does not support embedded video.</video></div>
+          <figure>
+            <blockquote>“What I appreciate most about Andrea is his flexibility, his availability, his willingness to work alongside everyone and to come up with great ideas.”</blockquote>
+            <figcaption><strong>Anton Cardinal</strong><span>CEO, CGI Green</span><span>English-language client testimonial · 54 seconds</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <p>Available for remote creative strategy roles</p>
+        <h2 id="contact-title">Let’s talk.</h2>
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:ariccardi.marketing@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="https://www.linkedin.com/in/ariccardi/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+        <a class="switch-link" href="../">Looking for the paid media side? See my paid media portfolio</a>
+      </section>
+    </main>
+
+    <footer><span>© <span id="year">2026</span> Andrea Riccardi</span><span>Creative strategy · Hooks and copy · Statics</span></footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
