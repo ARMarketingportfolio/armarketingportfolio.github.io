@@ -147,6 +147,7 @@ nav a, .header-cta, .button, .eyebrow, .brand,
 nav a, .header-cta, .button, .eyebrow, .section-heading > p, .logo-cloud > p, .contact > p,
 .proof span, .featured-case-label, .natulim-kicker, .file-number, .file-result span { letter-spacing:.05em; }
 .file-result { flex-wrap:wrap; row-gap:.5rem; }
+.eyebrow span { flex-shrink:0; }
 .file-result span { line-height:1.4; }
 
 /* Phone: show the menu on its own row under the logo and Email button. */
