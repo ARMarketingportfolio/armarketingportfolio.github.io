@@ -9,3 +9,4 @@
 - CGI Green: official CGI Green storefront header asset
 - Holafly: official Holafly website logo asset
 - Frase.io: official Frase.io website header asset
+- Sahara London: official Sahara London website header logo (saharalondon.com), inline SVG saved 2026-11-13; fill set to the site's #202020
