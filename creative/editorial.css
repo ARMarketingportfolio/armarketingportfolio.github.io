@@ -129,3 +129,30 @@ h1, h1 em, h2, h3, h4,
 @media(max-width:540px) { .logo-row { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; } .logo-item, .logo-item:nth-child(n + 6), .logo-item:last-child { min-height:110px; padding:.8rem; } }
 @media(prefers-reduced-motion:reduce) { .logo-item { transition:none; } .logo-item:hover { transform:none; } }
 
+/* Fixes 2026-11-13: readable sizes, metric fit, phone menu. Scoped to the creative page only. */
+/* The big Natulim CPA was 10vw and ran past the right edge at 1440px. */
+.natulim-case .featured-case-hero-metric strong { font-size:clamp(4.2rem, 7vw, 7.5rem); white-space:nowrap; }
+
+/* Small labels: nothing under 16px. Uppercase labels get less tracking so they don't spread too wide. */
+nav a, .header-cta, .button, .eyebrow, .brand,
+.section-heading > p, .logo-cloud > p, .contact > p,
+.proof span, .featured-case-label, .featured-case-hero-metric span, .featured-case-hero-metric small,
+.featured-case-metrics span, .featured-case-metrics small,
+.featured-case-system > p, .featured-case-system article > span,
+.system-steps li > span, .system-steps small,
+.natulim-kicker, .file-number, .file-result span, .files-note,
+.testimonial figcaption, .testimonial figcaption span, footer, footer span, .logo-item--starting span {
+  font-size:1rem;
+}
+nav a, .header-cta, .button, .eyebrow, .section-heading > p, .logo-cloud > p, .contact > p,
+.proof span, .featured-case-label, .natulim-kicker, .file-number, .file-result span { letter-spacing:.05em; }
+.file-result { flex-wrap:wrap; row-gap:.5rem; }
+.file-result span { line-height:1.4; }
+
+/* Phone: show the menu on its own row under the logo and Email button. */
+@media (max-width:800px) {
+  .site-header { flex-wrap:wrap; row-gap:0; padding-top:.6rem; }
+  .site-header nav { display:flex; order:3; width:100%; margin-left:0; gap:1.6rem; padding:.7rem 0 .9rem; }
+  .site-header .header-cta { margin-left:auto; }
+}
+
