@@ -45,6 +45,11 @@ h1 em { font-family:var(--font-sans); color:#c4b7ff; font-style:normal; font-wei
 .logo-cloud { border-color:#34333f; }
 .logo-row { border:0; gap:2px; }
 .logo-item { border:0; background:#e9e9ed; border-radius:3px; }
+.logo-row { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.logo-item, .logo-item:nth-child(n + 6) { grid-column:auto; }
+.logo-item--starting { gap:.5rem; color:#171721; font-weight:700; font-size:.85rem; }
+.logo-item--starting img { width:36px; height:36px; }
+@media(max-width:700px) { .logo-row { grid-template-columns:repeat(2,minmax(0,1fr)); } .logo-item, .logo-item:nth-child(n + 6), .logo-item:last-child { grid-column:auto; } }
 .proof { background:#111119; border-top:1px solid #343340; border-bottom:1px solid #343340; }
 .proof article { border-color:#30303b; }
 .proof strong { color:#c8bbff; }
