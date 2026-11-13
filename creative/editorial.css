@@ -91,3 +91,15 @@ h1 em { font-family:var(--font-sans); color:#c4b7ff; font-style:normal; font-wei
 .button-outline { background:transparent; color:#f2f1fa; border-color:#777185; }
 .button-outline:hover,.button-outline:focus-visible { background:#2a263c; border-color:#b5a7ee; color:#fff; }
 @media (prefers-reduced-motion:reduce) { .creative-file,.ad-card,.button,.system-steps li { transition:none; } .creative-file:hover,.creative-file:focus-within,.ad-card:hover { transform:none; } }
+:root {
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1, h1 em, h2, h3, h4,
+.proof strong, .featured-case-hero-metric strong,
+.featured-case-metrics strong, .file-result strong {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
